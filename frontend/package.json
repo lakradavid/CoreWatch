@@ -14,8 +14,8 @@
   },
   "scripts": {
     "dev": "vite",
+    "dev:local": "vite",
     "build": "vite build",
-    "build:demo": "DEMO_MODE=true vite build",
     "preview": "vite preview"
   }
 }
