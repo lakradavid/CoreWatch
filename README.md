@@ -46,32 +46,34 @@ A modern full-stack system monitoring dashboard that displays real-time CPU, RAM
 - Recharts for data visualization
 - Modern CSS with glassmorphism effects
 
-## Installation
+## 🚀 Deployment
 
-### Backend Setup
+CoreWatch is a system monitoring tool that monitors the hardware it runs on. See [DEPLOYMENT.md](DEPLOYMENT.md) for detailed deployment options:
+
+- **Local Development** (Recommended) - Monitor your own computer
+- **Cloud Backend** - Deploy backend to Railway/Render to monitor that server
+- **Frontend Demo** - Deploy UI to Vercel with mock data
+- **Docker** - Self-hosted container deployment
+
+### Quick Local Setup
+
+**Backend:**
 ```bash
 cd backend
 npm install
 npm start
 ```
 
-The backend will run on `http://localhost:5000`
-
-### Frontend Setup
+**Frontend:**
 ```bash
 cd frontend
 npm install
 npm run dev
 ```
 
-The frontend will run on `http://localhost:3000`
+Access at `http://localhost:3000`
 
-## Usage
-
-1. Start the backend server first
-2. Start the frontend development server
-3. Open your browser to `http://localhost:3000`
-4. Watch your system stats update in real-time!
+For cloud deployment instructions, see [DEPLOYMENT.md](DEPLOYMENT.md).
 
 ## API Endpoints
 
