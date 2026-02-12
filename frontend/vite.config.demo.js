@@ -3,13 +3,17 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  server: {
-    port: 3000
+  base: '/CoreWatch/',
+  build: {
+    rollupOptions: {
+      input: {
+        main: './index.html'
+      }
+    }
   },
-  base: process.env.NODE_ENV === 'production' ? '/CoreWatch/' : '/',
   resolve: {
     alias: {
-      './App': process.env.DEMO_MODE === 'true' ? './App-demo' : './App'
+      './src/main.jsx': './src/main-demo.jsx'
     }
   }
 });
